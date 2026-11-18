@@ -1,0 +1,19 @@
+[project]
+name = "moe-serve"
+version = "0.0.1"
+description = "Mini MoE serving engine: speculative decoding x parallelism analysis"
+requires-python = ">=3.10"
+dependencies = ["torch", "triton", "transformers", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib", "pandas"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["moe_serve*", "analysis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
