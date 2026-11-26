@@ -17,12 +17,12 @@ Hand-written hot paths only; PyTorch for control flow.
 
 | Area | Where |
 |---|---|
-| Model forward (attention, router, top-k, experts) | `moe_serve/model/` |
-| Paged KV, block tables, rollback | `moe_serve/kv/` |
-| Kernels | `moe_serve/kernels/` |
-| TP / EP / PP / DP-attention | `moe_serve/parallel/` |
-| Spec decoding (draft, EAGLE head, tree verify) | `moe_serve/spec/`, `train/` |
-| Scheduler / continuous batching | `moe_serve/engine/` |
+| Model forward (attention, router, top-k, experts) | `src/moe_serve/model/` |
+| Paged KV, block tables, rollback | `src/moe_serve/kv/` |
+| Kernels | `src/moe_serve/kernels/` |
+| TP / EP / PP / DP-attention | `src/moe_serve/parallel/` |
+| Spec decoding (draft, EAGLE head, tree verify) | `src/moe_serve/spec/`, `train/` |
+| Scheduler / continuous batching | `src/moe_serve/engine/` |
 | Baselines, sweeps, profiling | `bench/`, `scripts/` |
 | Analytical model, roofline, Nsight | `analysis/` |
 
